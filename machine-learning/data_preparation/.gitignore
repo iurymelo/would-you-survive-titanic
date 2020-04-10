@@ -1,4 +1,4 @@
 data/finished.lock
-train/*.parquet/
-test/*.parquet
+train/train.parquet/
+test/test.parquet
 
