@@ -1,0 +1,4 @@
+data/finished.lock
+train/*.parquet/
+test/*.parquet
+

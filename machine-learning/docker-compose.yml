@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  wrangler:
+    container_name: data_wrangler
+    build:
+      context: .
+      dockerfile: data_preparation/Dockerfile
+    volumes:
+        - .:/home/code/
+    working_dir: /home/code/
+        
+  trainer:
+      container_name: trainer
+      build:
+        context: .
+        dockerfile: training/Dockerfile
+      volumes:
+        - .:/home/code
+      working_dir: /home/code/
+      depends_on:
+        - wrangler

@@ -1,0 +1,7 @@
+machine-learning/data_preparation/dask-worker-space
+machine-learning/data_preparation/data/*.lock
+machine-learning/data_preparation/data/test/test.parquet/
+machine-learning/data_preparation/data/train/train.parquet/
+machine-learning/training/dask-worker-space
+machine-learning/dask-worker-space
+
