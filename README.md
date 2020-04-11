@@ -3,7 +3,7 @@
 
 Webapp to predict if you would survive the Titanic sink using machine learning. Machine learning algorithm made in Python, back end in Flask, and front end in ReactJs.
 This project uses Dask to parallelize data loading. It is just for demo purposes, though. You can use regular pandas.
-This project is also ready to run on containers.
+This project is also ready to run on containers. To preview, just click in: [Visit the WebApp!](https://wys-titanic.web.app/)
 
 ## Technologies :rocket: :
 
@@ -16,10 +16,6 @@ This project is also ready to run on containers.
  
 
 ## Setup
-
-### Training
-
-## Using on Docker
-
+todo
 
 **Made by Iury Melo**
