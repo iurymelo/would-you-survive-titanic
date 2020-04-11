@@ -127,6 +127,7 @@ export default function UserForm() {
             })
           }
         }
+        break;
 
       default:
         break;
@@ -181,7 +182,8 @@ export default function UserForm() {
       api.request(`/predict?age=${info['age']}&sex=${info['sex']}&pclass=${info['pclass']}&sibsp=${info['sibsp']}`)
         .then(res => {
           setLoading(false);
-          if(res.data.survived == 1) {
+          console.log(res.data)
+          if(res.data.survived === "1") {
             alert('Wooow! You would survive! But why did you let Jack go?')
           } else {
             alert('Sorry Fish Food, you would die.')

@@ -31,10 +31,10 @@ const Home = (props) => {
 
 
           </div>
-          <div className='footer'>Made by Iury Melo. You can check my <a href={'https://github.com/iurymelo/'}
+          <div className='footer'>Made by Iury Melo. You can visit my <a href={'https://github.com/iurymelo/'}
                                                                          target="_blank">
             GitHub</a>, and contact me through <a href={'https://www.linkedin.com/in/iuryamerico/'} target="_blank"
-          >Linkedin</a>! <br /> To see this project's source code, visit: <a
+          >Linkedin</a>! <br /> To check this project's source code, just click on: <a
             href={'https://github.com/iurymelo/would-you-survive-titanic'} target="_blank">
             Would You Survive Titanic: GitHub repository</a>.
           </div>
