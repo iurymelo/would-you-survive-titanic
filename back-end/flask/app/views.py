@@ -11,7 +11,7 @@ import pandas as pd
 import numpy as np
 
 # Load the pickle model
-model = pickle.load(open('app/model/model.pickle', 'rb'))
+model = pickle.load(open('machine-learning/training/data/model', 'rb'))
 
 @app.route('/')
 def home():
