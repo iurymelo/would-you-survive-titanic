@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+    flask:
+        build: ./back-end/flask
+        container_name: flask
+        restart: always
+        environment:
+            - APP_NAME=FlaskApp
+        expose:
+            - 8080
+    
+    nginx:
+        build: ./back-end/nginx
+        container_name: nginx
+        restart: always
+        ports:
+            - "9000:9000"
+    
+    react:
+        stdin_open: true
+        tty: true
+        build: ./front-end/
+        container_name: react
+        restart: always
+        ports:
+            - "3000:3000"

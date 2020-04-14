@@ -13,6 +13,11 @@ import numpy as np
 # Load the pickle model
 model = pickle.load(open('app/model/model.pickle', 'rb'))
 
+@app.route('/')
+def home():
+    return "API HOME"
+    
+    
 # GET REQUEST
 @app.route('/predict')
 def predict():
